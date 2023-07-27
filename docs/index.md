@@ -1,17 +1,40 @@
-# Welcome to MkDocs
+# Open Source Energy and Trading Risk Management 
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+The goal of the osetrm project is to create an energy trading risk management system which is modular, extensible, and open source. 
 
-## Commands
+## Design Philosophy
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Hyper iterative design - one thing as a time.  
+Interfaces are the key - clean, concise, and domain driven.   
+Clear separation of concerns.  
+Value is aggregated. 
 
-## Project layout
+## Project Structure
+![Screenshot](images/osetrm.png)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### Interfaces
+- osetrm-schema-proto-common
+- osetrm-schema-proto-legal-entity
+- osetrm-schema-proto-instrument
+- osetrm-schema-proto-market-data
+- osetrm-schema-proto-trade
+
+### Subsystems
+#### Reference Data
+- (TBD)
+
+#### Legal Entity
+- osetrm-legal-entity-api
+- osetrm-gleif-consumer (TBD)
+
+#### Instrument
+- (TBD)
+
+#### Market Data
+- (TBD)
+
+#### Trade
+- osetrm-trade-api (TBD)
+- osetrm-trade-capture-cme (TBD)
+- osetrm-trade-capture-ice (TBD)
+

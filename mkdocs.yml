@@ -1,3 +1,20 @@
-site_name: osetrm
+site_name: Open Source Energy Trading and Risk Management
+repo_url: https://github.com/osetrm
+
 theme:
   name: material
+  palette:
+    scheme: slate
+    primary: custom
+  features:
+    - navigation.sections
+    
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: 'index.md'
